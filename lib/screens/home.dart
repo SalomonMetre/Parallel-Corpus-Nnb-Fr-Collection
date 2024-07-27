@@ -183,6 +183,7 @@ class _HomePageState extends State<HomePage> {
           child: LayoutBuilder(builder: (context, constraints) {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 const Text(
                   'Welcome',
@@ -248,6 +249,7 @@ class _HomePageState extends State<HomePage> {
     return [
       const SizedBox(height: 16),
       Expanded(
+        flex: 4,
         child: TextField(
           controller: _sourceTextController,
           style: const TextStyle(color: Colors.teal),
@@ -261,6 +263,7 @@ class _HomePageState extends State<HomePage> {
       ),
       const SizedBox(height: 16),
       Expanded(
+        flex: 4,
         child: TextField(
           controller: _targetTextController,
           style: const TextStyle(color: Colors.teal),
