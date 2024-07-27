@@ -197,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                   ..._buildContent()
                 else
                   Expanded(
-                    flex: 8,
+                    flex: 12,
                     child: Row(
                       children: [
                         ..._buildContent(),
