@@ -196,10 +196,13 @@ class _HomePageState extends State<HomePage> {
                 if (constraints.maxWidth < 600)
                   ..._buildContent()
                 else
-                  Row(
-                    children: [
-                      ..._buildContent(),
-                    ],
+                  Expanded(
+                    flex: 8,
+                    child: Row(
+                      children: [
+                        ..._buildContent(),
+                      ],
+                    ),
                   ),
                 const SizedBox(height: 16),
                 ElevatedButton(
