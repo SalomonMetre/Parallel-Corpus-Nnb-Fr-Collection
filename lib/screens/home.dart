@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:transcollect_nnb_fr_hub/data/models/firestore.dart';
 
 class HomePage extends StatefulWidget {
@@ -90,11 +91,15 @@ class _HomePageState extends State<HomePage> {
         ),
       );
     } else {
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      String email = prefs.getString('email') ?? '';
       final dataToSubmit = <String, String>{
         "source_lang": _selectedDropDownValue == "NNB-FR" ? "nnb" : "fr",
         "target_lang": _selectedDropDownValue == "NNB-FR" ? "fr" : "nnb",
         "source_sentence": sourceText,
         "target_sentence": targetText,
+        if (email.isNotEmpty)
+        "email" : email,
       };
       await FirestoreModel().add("sentences", dataToSubmit);
       ScaffoldMessenger.of(context).showSnackBar(
