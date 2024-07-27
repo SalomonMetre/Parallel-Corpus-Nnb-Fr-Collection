@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "629645260568",
+    "project_id": "transcollect-nnb-fr-hub",
+    "storage_bucket": "transcollect-nnb-fr-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629645260568:android:47b65a4434331e0ed1d06d",
+        "android_client_info": {
+          "package_name": "com.example.transcollect_nnb_fr_hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSP59NllHUP9pzukolj8E4OgClIZGIK5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629645260568:android:b92c3d91c384d72fd1d06d",
+        "android_client_info": {
+          "package_name": "com.transcollect_nnb_fr_hub.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSP59NllHUP9pzukolj8E4OgClIZGIK5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
